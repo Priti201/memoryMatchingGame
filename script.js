@@ -104,7 +104,7 @@ const matrixGenerator =(cardValues , size = 4)=>{
     cards = document.querySelectorAll('.card-container');
     cards.forEach((card)=>{
         card.addEventListener('click', ()=>{
-            if(!card.classList.contains('matched'))
+            if(!card.classList.contains('matched') && !card.classList.contains('flipped'))
             {
                 card.classList.add('flipped');
 
