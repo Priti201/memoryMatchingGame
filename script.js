@@ -155,7 +155,7 @@ startButton.addEventListener('click',()=>{
     startButton.classList.add('hide');
 
     interval = setInterval(timeGernerator, 1000);
-    movies.innerHTML =`<span>Moves:</span> ${movesCount}`;
+    moves.innerHTML =`<span>Moves:</span> ${movesCount}`;
     initlizer();
 })
 stopButton.addEventListener('click',(stopGame =()=>{
